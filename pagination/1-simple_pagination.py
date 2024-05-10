@@ -47,5 +47,6 @@ class Server:
                 try:
                     out_list.append(next(reader_obj))
                 except Exception:
+                    out_list = []
                     break
         return out_list
