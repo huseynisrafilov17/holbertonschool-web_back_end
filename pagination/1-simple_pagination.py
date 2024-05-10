@@ -3,13 +3,7 @@
 import csv
 import math
 from typing import List
-
-
-def index_range(page, page_size):
-    """Index range"""
-    beginning = (page - 1) * page_size
-    end = page * page_size
-    return (beginning, end)
+index_range = __import__('0-simple_helper_function').index_range
 
 
 class Server:
